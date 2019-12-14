@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+    <title>ABOUT</title>
+</head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li style="float:right"><a href="/PHOTO/"> PHOTO</a></li>
+                    <li style="float:right"><a href="/VIDEO/"> VIDEO</a></li>
+                    <li style="float:left"><a href="/"> HOME</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="large-header" class="large-header" style="height: 60px;">
+                <h1 class="main-title"><i>ABOUT ME</i></h1>
+        </div>
+        <main>
+
+            <div>
+                <img src="sara.jpg" alt="Sara Seryani" align= "left" hspace="100" style="max-width:35%;">
+            </div>
+
+            <div>
+   
+                <p align="left">
+                    I’m a freelance artist and creative currently working with VIM Magazine and VideoNow MSU.
+                    At VIM I lead a team of 15 filmmakers in creating impactful films and video content for the publication. 
+                    This Spring I had the honor in shooting the
+                     <a href="https://issuu.com/vimfashion/docs/spring_print_2019_cover_two">cover</a> 
+                    as well as creating a 
+                     <a href="https://www.youtube.com/watch?v=yT0SO-HmMiM&amp;t=4s">documentary</a> 
+                    to tell the story behind the cover. I also direct photoshoots, from booking the studio to guiding photographers to getting their best shots.
+                </p>
+                <br>
+                <p align="left">
+                    VideoNow MSU is a show out of MSU Telecasters. We produce music related content. I’ve hosted and produced our 
+                        <a href="https://www.youtube.com/watch?v=r2I7WqJqrd0&amp;list=PLqvsJ_KxVB-7V3kgNoUByOBNyiVEVdtSn">podcast</a>
+                    , which revolves around music and trending topics in pop culture. Additionally we’ve done 
+                    <a href="https://www.youtube.com/watch?v=m5VCFg8Nfck&amp;list=PLqvsJ_KxVB-5bZr4pn1C8s9qUW0gFFi3d">music videos</a> 
+                    and 
+                    <a href="https://www.youtube.com/watch?v=2j5dDgZhbcA&amp;list=PLqvsJ_KxVB-4F2VvfV_9C7L0b1aKnWzDy">acoustic sessions</a> 
+                    with artists! 
+                </p>
+                <br>
+                <p align="left">
+                    My goal is to create and learn, I hope that my art that resonates with humans at a deeper level. I’m not interested in creating visually pleasing art that only hits the surface of a person’s heart. I want to create art that is powerful and impactful. </p>
+                <p align="left">
+                    In my spare time I’m a full-time student at Michigan State University, double majoring in Computer Science and Media &amp; Information.</p>
+                <br>
+                <p align="center"><strong>CURRENTLY: </strong></p>
+                <p align="center"><em>Film Director</em> | VIM Magazine</p>
+                <p align="center"><em>Producer</em> | VideoNow MSU</p>
+
+                <br>
+            </div>
+        <p align="center"><b>I can often times be found here!</b></p>
+
+        <div id="mapid"></div>
+        <script>
+          var mymap = L.map('mapid').setView([42.7018, -84.4822], 13);
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          }).addTo(mymap);
+    
+          L.marker([42.7018, -84.4822]).addTo(mymap)
+              .bindPopup('MSU')
+              .openPopup();
+        </script>
+        </main>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-clmn1">© 2019 Design by Sara Seryani <a href="http://saraseryani.com">Sara Seryani</a></div>
+            <div class="footer-clmn2">Email: <a href="mailto:seryanisara@gmail.com">seryanisara@gmail.com</a></div>
+        </div>
+    </div>
+              
+    </body>
+</html>
